@@ -23,7 +23,7 @@
 .calendario_dias {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 15px;
+  gap: 10px;
 }
 
 .header_dia {
