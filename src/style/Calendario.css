@@ -1,0 +1,94 @@
+.container_calendario {
+  max-width: 400px;
+  margin-top: 30px;
+}
+
+.container_calendario h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+  color: black;
+  font-size: 23px;
+}
+
+.calensario_dias_headers {
+  background-color: rgba(255, 255, 255, 0);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.calendario_headers,
+.calendario_dias {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 15px;
+}
+
+.header_dia {
+  text-align: center;
+  color: #000;
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.dia {
+  position: relative;
+  width: 40px;
+  padding-top: 100%;
+  overflow: hidden;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+  height: 60px;
+}
+
+.dia_vacio {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.dia_activo {
+  cursor: pointer;
+}
+
+.numero_dia {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 1;
+  color: #000;
+}
+
+.icono_especial.imagen_kimetsu {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  z-index: 2; /* encima del número */
+  opacity: 0.8; /* Corregido: era "o.8" */
+  pointer-events: none;
+}
+
+.icono_especial.imagen_kimetsu img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  animation: rotacion 2s linear infinite; /* Rotación continua */
+}
+
+@keyframes rotacion {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
