@@ -8,11 +8,22 @@
 }
 
 .header {
-  position: relative;
+  width: 100%; /* o un ancho fijo si prefieres */
+  max-width: 400px; /* ajusta el tamaño */
+  margin: 0 auto; /* centrado */
 }
 
 .header .foto_quinceañera {
   height: 764px;
+}
+
+.header .foto_quinceañera,
+.header .roto_hoja img {
+  width: 100%;       /* ambas ocupan el mismo ancho */
+  display: block;
+  object-fit: cover; /* mantiene proporción */
+  border-radius: 20px; /* opcional */
+  position: relative;
 }
 
 .roto_hoja {
