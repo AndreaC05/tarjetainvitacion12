@@ -79,7 +79,7 @@ export default function Contenido() {
             </a>
           </div>
         </div>
-        <div className="fiesta mt-5">
+        <div className="fiesta">
           <img
             src="https://res.cloudinary.com/dnao6nouz/image/upload/v1758728820/image_60_pvjjnr.svg"
             alt=""
@@ -93,7 +93,19 @@ export default function Contenido() {
             </a>
           </div>
         </div>
-        <div className="vestimenta mt-5">
+        <div className="confirmar_asistencia">
+          <i className="pi pi-whatsapp"></i>
+          <h5>Confirma tu asistencia</h5>
+          <div className="buton_direccion mt-3">
+            <a
+              href="https://wa.me/51950874416?text=Hola%20quiero%20confirmar%20mi%20asistencia%20a%20tu%20fiesta."
+              target="_blank"
+            >
+              <Button label="Confirmar" />
+            </a>
+          </div>
+        </div>
+        <div className="vestimenta">
           <img src="https://res.cloudinary.com/dnao6nouz/image/upload/v1758732604/image_63_re7hei.svg" alt="" />
           <h5>Dress Code</h5>
           <p>Sport Elegante</p>

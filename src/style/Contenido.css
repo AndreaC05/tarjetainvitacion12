@@ -129,12 +129,20 @@
 
 .recepcion_religiosa,
 .fiesta,
-.vestimenta {
-  margin-top: 20px;
+.vestimenta, 
+.confirmar_asistencia {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.fiesta, .confirmar_asistencia, .vestimenta {
+  margin-top: 70px;
+}
+
+.confirmar_asistencia .pi {
+  font-size: 40px;
 }
 
 .recepcion_religiosa img {
@@ -143,7 +151,8 @@
 
 .recepcion_religiosa h5,
 .fiesta h5,
-.vestimenta h5 {
+.vestimenta h5,
+.confirmar_asistencia h5 {
   font-size: 20px;
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
@@ -219,8 +228,8 @@
 }
 
 .mensaje {
-  margin-top: 30px;
-  margin-bottom: 80px;
+  margin-top: 70px;
+  margin-bottom: 100px;
 }
 
 .mensaje p {
